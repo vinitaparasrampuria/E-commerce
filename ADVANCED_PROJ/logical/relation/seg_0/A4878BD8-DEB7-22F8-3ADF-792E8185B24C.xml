@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VP_COUNTRY_STATE" directorySegmentName="seg_0" id="A4878BD8-DEB7-22F8-3ADF-792E8185B24C">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:29:33 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<sourcePk>424FE436-5A57-237C-0A69-3A4D3B9501A4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>30F6F134-1647-77F6-8876-267375C74D33</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>98F9EB3A-FD35-389A-D782-BC12BF040C78</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

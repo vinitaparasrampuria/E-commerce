@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB3BD145-4723-5014-8A3C-5295F2E35E14" name="DIM_VP_STATE">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>98F9EB3A-FD35-389A-D782-BC12BF040C78</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STATE_ID" id="4DB4B732-7D7E-F3F7-350E-9268BAD46FC4">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[UNIQUE ID OF THE STATE]]></commentInRDBMS>
+<generatorID>75653C44-5208-8BD8-20D1-2E6EBDB6EC01</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE_NAME" id="6A5E42B9-FAC8-BD06-ADED-DC3FB1B57A32">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE STATE]]></commentInRDBMS>
+<generatorID>5FB194A7-D943-97B6-367B-58489871C7A5</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABL_LAST_DATE" id="ECAA64F6-7B7E-320D-D572-58B7B5701A6E">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF THE TABLE]]></commentInRDBMS>
+<generatorID>3444514C-0F97-82D1-83BB-C4A62AAB045A</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C63A42C7-A7C9-1FC6-7799-D57F461315D8" name="DIM_VP_STATE_PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>0240A431-20B1-2CDC-E413-137639A374DD</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DB4B732-7D7E-F3F7-350E-9268BAD46FC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

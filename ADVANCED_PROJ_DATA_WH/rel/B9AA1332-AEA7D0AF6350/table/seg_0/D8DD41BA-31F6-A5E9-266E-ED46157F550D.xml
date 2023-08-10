@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D8DD41BA-31F6-A5E9-266E-ED46157F550D" name="DIM_VP_COUNTRY">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>30F6F134-1647-77F6-8876-267375C74D33</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_ID" id="73249E8B-35DE-70BE-5E29-87DA2337D180">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[UNIQUE COUNTRY ID]]></commentInRDBMS>
+<generatorID>C0DCBCEF-F938-76BE-0EA4-51914B079063</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME" id="FF38829E-1C12-4A39-7C15-CF0A65270233">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE COUNTRY]]></commentInRDBMS>
+<generatorID>615DAB67-173F-E082-26FD-FA6E028EC246</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABL_LAST_DATE" id="BA9E7147-1F52-0C49-13DB-3CB470EE4895">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF THE TABLE]]></commentInRDBMS>
+<generatorID>860378BE-D58D-F755-0510-F95CF314331E</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0B905EDD-5E3E-BC2A-4CDB-DE978008A0A9" name="DIM_VP_COUNTRY_PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>424FE436-5A57-237C-0A69-3A4D3B9501A4</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="73249E8B-35DE-70BE-5E29-87DA2337D180"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

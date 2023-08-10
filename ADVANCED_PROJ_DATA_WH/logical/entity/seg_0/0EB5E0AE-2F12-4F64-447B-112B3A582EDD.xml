@@ -1,0 +1,296 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0EB5E0AE-2F12-4F64-447B-112B3A582EDD" name="FACT_VP_ORDER_PRODUCT">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:15:29 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ROW_ID" id="AF25D3D3-BC18-5177-E6C8-A97848B5FFFC">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 09:33:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[ROW-ID]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUANTITY" id="2E67BE19-7807-F4C2-5258-4A5BA28DF34C">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:15:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[QUANTITY OF PRODUCT]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DISCOUNT" id="87EA03C2-44B9-EF46-F07B-3FD7DE2458DC">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:16:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[DISCOUNT FOR EACH PRODUCT]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SHIPPING_COST" id="CB4A8579-C911-6BD7-818F-7F5D2E2BE5CA">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:17:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[SHIPPING COST OF PRODUCT]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_ID" id="35AA037C-AA53-9C35-4E4F-EE82E424F295">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:33:43 UTC</createdTime>
+<generatorID>8E3C2239-5817-3E33-3183-7AE4FC72D192</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>95CA5290-1FAE-D154-C18A-FFF5991232EB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_ID" id="9D38278C-8064-314F-546A-BE48481BD225">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:34:00 UTC</createdTime>
+<generatorID>26DB57D2-4FFB-BACD-1FA3-7C624FF87448</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>55FE0E64-0559-2EA0-3BD0-C1832C027229</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TABL_LAST_DATE" id="964D0E44-874F-CFCF-6939-85EF7B0C56BE">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 00:10:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF THE TABLE]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SHIP_MODE" id="DE4BC07B-7518-74BB-0361-C2A59D722B39">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 09:41:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[MODE OF SHIPMENT]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SHIP_DATE" id="1429529E-7E56-2153-A94D-E36E92EBBDFB">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 09:41:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE OF SHIPMENT]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CUST_ID" id="76303AF7-738B-2997-B4CB-7262504A8B10">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:12:43 UTC</createdTime>
+<generatorID>37A22B53-4A45-6A32-DD59-7A5A786E7EA8</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>F2285E90-F341-FF0E-9B49-EE591CAA0B0B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOCATION_ID" id="34C6E047-6721-4830-1127-6F23E2214D42">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:12:49 UTC</createdTime>
+<generatorID>298BD13A-EDA4-D815-2197-126EA64B8102</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>4E696DAB-46C7-6269-4C87-3B4E56823489</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="STATE_ID" id="2DC5ACCD-9B35-CD87-8BF7-E8F29148824C">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:13:47 UTC</createdTime>
+<generatorID>D7C614F9-7D0C-6429-D185-F8B4BE1A8BD7</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>75653C44-5208-8BD8-20D1-2E6EBDB6EC01</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COUNTRY_ID" id="67192457-11FC-8A56-7500-4EB049808C22">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:14:01 UTC</createdTime>
+<generatorID>420987E1-F946-157F-DDB0-B36797483D90</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>C0DCBCEF-F938-76BE-0EA4-51914B079063</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MARKET_ID" id="1B5194F2-1883-5BFB-375C-CAE003DC1BFF">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:14:29 UTC</createdTime>
+<generatorID>F60840EF-2069-77BA-E6DA-55294D4462E8</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>A393ACB9-1EB1-0BB1-0E01-3FEBCC3036D3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REGION_ID" id="FF0B4D26-A318-EC7B-C8D6-06F95BCAA8F0">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:15:10 UTC</createdTime>
+<generatorID>861A1BED-CCE0-BD93-3AD6-A601BA805E97</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>B5CC9038-83FC-16DB-C86C-0700BE102946</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CATEGORY_ID" id="C992EC56-EC2F-8CDF-4697-0D6236663B52">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:15:15 UTC</createdTime>
+<generatorID>FCAD18E2-3A2D-8D0F-EE83-F8ABBE60F441</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>C8B7B072-4670-02FA-9A4D-8A4A31724439</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_CAT_ID" id="1CD26FA1-4EB1-386A-FA11-188ECC0651C1">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:15:40 UTC</createdTime>
+<generatorID>0CD92CAF-5CFA-BB2C-7B96-5B0DF1DC7E03</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>D1FD88E6-67DB-0CF3-9017-4B1A2B6BA897</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DATE_ID" id="493FB7FB-8026-8B68-12A6-4CEF49AC4A69">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:43:33 UTC</createdTime>
+<generatorID>730107F9-60EC-13F7-2CBC-E481B3516735</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>33FA4541-52E1-F5E9-9D3C-0E9700F210D4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="887B4FB0-095A-C1D0-7659-21501E285F73" name="VP_ORDER_PRODUCT PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 09:33:36 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AF25D3D3-BC18-5177-E6C8-A97848B5FFFC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

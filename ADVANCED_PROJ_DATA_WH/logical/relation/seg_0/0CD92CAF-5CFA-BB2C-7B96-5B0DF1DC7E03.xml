@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VP_SUB_CAT_OP" directorySegmentName="seg_0" id="0CD92CAF-5CFA-BB2C-7B96-5B0DF1DC7E03">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:15:40 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<sourcePk>AFC1F9E3-D4DD-0429-ECD8-849F15805231</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2ACA5478-3191-A0CD-9A7E-C684F11E920C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0EB5E0AE-2F12-4F64-447B-112B3A582EDD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

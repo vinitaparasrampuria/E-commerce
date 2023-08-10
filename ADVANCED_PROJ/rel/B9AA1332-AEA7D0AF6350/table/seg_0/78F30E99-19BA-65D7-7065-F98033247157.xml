@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78F30E99-19BA-65D7-7065-F98033247157" name="VP_CUSTOMER">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>A097CDEA-AF55-0429-FF3F-6259B1202A73</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CUST_ID" id="298BBF40-81E7-AF50-60F5-DC6E1C0E5B82">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[UNIQUE CUSTOMER ID]]></commentInRDBMS>
+<generatorID>F2285E90-F341-FF0E-9B49-EE591CAA0B0B</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_FNAME" id="9BE57FB8-4354-420A-5EA8-5040AC9C83EB">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[FIRST NAME OF THE CUSTOMER]]></commentInRDBMS>
+<generatorID>DA2DB5B1-9203-4E5B-55A4-F4443844E00E</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_LNAME" id="1FA4E11D-0F56-BD49-7D2C-8735FECB02F5">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST NAME OF THE CUSTOMER]]></commentInRDBMS>
+<generatorID>E6098771-E392-198E-6BE0-72034F7282BD</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGMENT" id="C33CAFBE-8C69-C73B-F5DF-026C49242642">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[SEGMENT OF THE CUSTOMER- CONSUMER/ CORPORATE/ HOME OFFICE]]></commentInRDBMS>
+<generatorID>AED7498F-A7B6-68D0-E75C-D770BC785CBD</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTAL_ID" id="765782DA-A577-1E03-BC0B-78C3204BC07E">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[POSTAL CODE OF CUSTOMER ADDRESS]]></commentInRDBMS>
+<generatorID>D454EB30-1065-EE31-2B07-9D2259E0EC5B</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY_NAME" id="8810D629-6F01-8B20-D687-BA6E8D1B8BDB">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE CITY]]></commentInRDBMS>
+<generatorID>7C61DAEC-B020-E110-2A94-25A1A6DA9354</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TABL_LAST_DATE" id="4CD4E0FE-FD34-81E9-1C90-D1A3C2D8CCFC">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF THE TABLE]]></commentInRDBMS>
+<generatorID>7D781A15-1BF1-1F7F-9089-CE0127ED85B3</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOCATION_ID" id="13F1723A-A1BD-FF06-91AE-1BB783BFEB78">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>DAFEEB49-3CD0-FDB2-5CEB-74E66F422505</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF4C6746-77B8-FEB1-EC33-DE7B0726A48C" referredColumn="1BDBC0F3-6B31-5586-5E68-6CF410314CD8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="046EFEFD-F3F9-3B1C-6349-D1E8B5E33541" name="VP_CUSTOMER_PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>0D2FF22C-6BFC-7E36-E1C9-B5BDEA75B7AE</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="298BBF40-81E7-AF50-60F5-DC6E1C0E5B82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00FE6426-3BDC-917E-FA0E-D3CAB233EC1C" name="VP_CUSTOMER_VP_LOCATION_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>CEF66726-F946-928E-8BD4-57814EDF93B8</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13F1723A-A1BD-FF06-91AE-1BB783BFEB78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

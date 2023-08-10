@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B085A3EC-C781-8873-FD66-EBA617DD8B55" containerWithKeyObject="8C0250FA-11E5-DF3B-C140-1BC6C0B39109" localFKIndex="FDB05304-1920-981F-AB13-AA3726D5F2A8" name="FACT_VP_OP_DIM_DATE_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>730107F9-60EC-13F7-2CBC-E481B3516735</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<referredTableLongName>DIM_DATE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E547F8EA-FEC1-A15E-7DE7-2B2359C16A9D</referredTableID>
+<keyObject>152BFEF5-3320-8D30-284F-F6E81BDD8F6D</keyObject>
+<referredKeyID>152BFEF5-3320-8D30-284F-F6E81BDD8F6D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>DATE_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

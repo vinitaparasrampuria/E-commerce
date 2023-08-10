@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94047DC6-9DCC-0781-2786-8B38E5DCB5D8" name="VP_STATE">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>98F9EB3A-FD35-389A-D782-BC12BF040C78</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="STATE_ID" id="10D9ED18-ECDF-565E-79EF-E6462B63AC65">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[UNIQUE ID OF THE STATE]]></commentInRDBMS>
+<generatorID>75653C44-5208-8BD8-20D1-2E6EBDB6EC01</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATE_NAME" id="5D33862C-56F9-87D5-FAF2-A2B2223EB9E0">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE STATE]]></commentInRDBMS>
+<generatorID>5FB194A7-D943-97B6-367B-58489871C7A5</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_ID" id="9DA87C10-CE10-B54F-7AC6-0479FB9163CB">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>9D6294A0-3BE6-C3E4-2183-1E66260397E6</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DA295817-9AE4-2F05-2B1F-AACDC198CED0" referredColumn="F7FBC443-BB6B-E80F-D503-C6FCD765E8C3"/>
+</associations>
+</Column>
+<Column name="TABL_LAST_DATE" id="54ACE564-322B-9FA4-C5D4-7A67DF64324A">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF THE TABLE]]></commentInRDBMS>
+<generatorID>3444514C-0F97-82D1-83BB-C4A62AAB045A</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33D2583F-20E3-2998-8B44-940E2670752F" name="VP_STATE_PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>0240A431-20B1-2CDC-E413-137639A374DD</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10D9ED18-ECDF-565E-79EF-E6462B63AC65"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F46A7DB7-4F78-6A47-8E38-32C0CC98CAE1" name="VP_STATE_VP_COUNTRY_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>A4878BD8-DEB7-22F8-3ADF-792E8185B24C</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DA87C10-CE10-B54F-7AC6-0479FB9163CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

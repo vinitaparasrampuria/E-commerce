@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3CA9FA9-2DD3-91B9-1B47-6445464CA02F" name="VP_COUNTRY">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>30F6F134-1647-77F6-8876-267375C74D33</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="COUNTRY_ID" id="F7FBC443-BB6B-E80F-D503-C6FCD765E8C3">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[UNIQUE COUNTRY ID]]></commentInRDBMS>
+<generatorID>C0DCBCEF-F938-76BE-0EA4-51914B079063</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY_NAME" id="8254DFD2-98CC-2BC8-DAC7-0738EAC5F98B">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE COUNTRY]]></commentInRDBMS>
+<generatorID>615DAB67-173F-E082-26FD-FA6E028EC246</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGION_ID" id="B98D6C86-C201-AB21-B788-F9385FBE12BA">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>FC3ABD2C-1FFC-51E1-FD18-964147334428</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA245F84-9859-4D94-0BBB-0D2C3C263265" referredColumn="5BE60CB9-9523-DAC2-E732-C498ABD5BDAD"/>
+</associations>
+</Column>
+<Column name="TABL_LAST_DATE" id="3C296A52-DD32-E237-599F-E20CD009917D">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF THE TABLE]]></commentInRDBMS>
+<generatorID>860378BE-D58D-F755-0510-F95CF314331E</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED31B70B-4C6D-BD92-CCDA-FEE699B9F8CD" name="VP_COUNTRY_PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>424FE436-5A57-237C-0A69-3A4D3B9501A4</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7FBC443-BB6B-E80F-D503-C6FCD765E8C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D99074A8-323E-A952-074B-9048383D843C" name="VP_COUNTRY_VP_REGION_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:09:47 UTC</createdTime>
+<generatorID>92EA8F96-4116-D823-C03C-B80AFA3AEBA5</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B98D6C86-C201-AB21-B788-F9385FBE12BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

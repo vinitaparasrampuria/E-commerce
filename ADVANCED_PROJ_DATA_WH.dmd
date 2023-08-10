@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ADVANCED_PROJ_DATA_WH" id="3206DBE8-DC2E-46BD-4BB7-DBF364D87A90" version="3.5">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 01:59:18 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3206DBE8-DC2E-46BD-4BB7-DBF364D87A90</designId>
+</OSDM_Design>

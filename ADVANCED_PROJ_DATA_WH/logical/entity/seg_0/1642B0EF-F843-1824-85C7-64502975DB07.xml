@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1642B0EF-F843-1824-85C7-64502975DB07" name="DIM_DATE">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:37:34 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DATE_ID" id="33FA4541-52E1-F5E9-9D3C-0E9700F210D4">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:37:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Unique Date ID]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ENTRY_ID" id="BD2DC8AC-D324-3211-B1DE-47234EE50D29">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:38:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[Entry ID]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FULL_DATE" id="4DEC06DD-4A47-B6D7-72CE-2A0D76BD9813">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:39:27 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAYS" id="35C3630D-9095-D9A3-DA6F-EE46C8568FE3">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:39:57 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTH_SHORT" id="BE4F0D55-6FB5-1982-4E44-06D9A99FDA0B">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:40:14 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTH_NUM" id="507B2C38-0CBE-EE35-2B62-F8246CF92536">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:40:34 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MONTH_LOG" id="51FCFA5A-270B-3355-232D-F702733CB85B">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:41:00 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAY_OF_WEEK_SHORT" id="269FE6DF-D509-FDB6-AF5D-EBCC1376E1F8">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:41:28 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DAY_OF_WEEK_LONG" id="3508D27A-BBC5-68C8-CFA1-A8F447034680">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:41:51 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="YEAR" id="99C9B836-4311-8C1F-8BF6-40A91D8BB139">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:42:11 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="QUARTER" id="DEAB85CE-C8A6-EBE0-6150-7A13A774027C">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:42:33 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4C7D33A0-D48D-9071-0AA2-CC5C80AA8C46" name="DIM_DATE PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:38:37 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>33FA4541-52E1-F5E9-9D3C-0E9700F210D4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

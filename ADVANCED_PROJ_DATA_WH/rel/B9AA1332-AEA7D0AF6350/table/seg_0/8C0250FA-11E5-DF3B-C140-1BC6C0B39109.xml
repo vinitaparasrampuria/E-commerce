@@ -1,0 +1,414 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8C0250FA-11E5-DF3B-C140-1BC6C0B39109" name="FACT_VP_ORDER_PRODUCT">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>0EB5E0AE-2F12-4F64-447B-112B3A582EDD</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ROW_ID" id="3E7FDECF-D97D-D27D-30C9-A431A1B736E8">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[ROW-ID]]></commentInRDBMS>
+<generatorID>AF25D3D3-BC18-5177-E6C8-A97848B5FFFC</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>15</dataTypePrecision>
+<ownDataTypeParameters>,15,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUANTITY" id="B07F8F6C-8B02-F469-623F-A0266934A88B">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[QUANTITY OF PRODUCT]]></commentInRDBMS>
+<generatorID>2E67BE19-7807-F4C2-5258-4A5BA28DF34C</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DISCOUNT" id="932B51F0-91F4-F9DB-E5BA-45D1A74C512B">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[DISCOUNT FOR EACH PRODUCT]]></commentInRDBMS>
+<generatorID>87EA03C2-44B9-EF46-F07B-3FD7DE2458DC</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIPPING_COST" id="8E331F7C-BF66-4E5A-86E3-BFF8C9902C84">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[SHIPPING COST OF PRODUCT]]></commentInRDBMS>
+<generatorID>CB4A8579-C911-6BD7-818F-7F5D2E2BE5CA</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDER_ID" id="777D9C77-D351-36D5-4837-F42809EE56E9">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>35AA037C-AA53-9C35-4E4F-EE82E424F295</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8BD079E0-C5C3-96FF-E9BE-3ED801FB64E3" referredColumn="B7BD24A5-7C5E-06DB-0C1A-565A6F6184CF"/>
+</associations>
+</Column>
+<Column name="PRODUCT_ID" id="2E69849F-5B11-A0DE-4EB7-4451843893E6">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>9D38278C-8064-314F-546A-BE48481BD225</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2EB87E19-1AD5-9475-3A5F-FD3E7B5D3B5E" referredColumn="EA231839-3480-8274-CE7D-9CE118BAD3DB"/>
+</associations>
+</Column>
+<Column name="TABL_LAST_DATE" id="52AEBFB1-8662-6857-3B61-E81307E811F4">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF THE TABLE]]></commentInRDBMS>
+<generatorID>964D0E44-874F-CFCF-6939-85EF7B0C56BE</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP_MODE" id="1ADDFD3C-14AC-7C17-2E18-FD5A63C7DDB9">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[MODE OF SHIPMENT]]></commentInRDBMS>
+<generatorID>DE4BC07B-7518-74BB-0361-C2A59D722B39</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SHIP_DATE" id="38B7CF80-3FC6-D3E1-1F08-47F9862A43EB">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE OF SHIPMENT]]></commentInRDBMS>
+<generatorID>1429529E-7E56-2153-A94D-E36E92EBBDFB</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUST_ID" id="BB88C5F8-403D-1C9B-601C-65331181FC97">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>76303AF7-738B-2997-B4CB-7262504A8B10</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="857ED90E-A83A-31C8-BAEE-5A464C39461E" referredColumn="41BF0BE9-0AF2-DF34-10A8-AF73C42A7ECA"/>
+</associations>
+</Column>
+<Column name="LOCATION_ID" id="ABBD4459-D414-B472-D171-4AB3F7138AD6">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>34C6E047-6721-4830-1127-6F23E2214D42</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22DCC81C-F928-1059-4E59-9A1AF039C2BC" referredColumn="A4178690-104C-6019-DBA9-5040C013DE57"/>
+</associations>
+</Column>
+<Column name="STATE_ID" id="410D1D74-4742-D055-4B7E-003ECB709E03">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>2DC5ACCD-9B35-CD87-8BF7-E8F29148824C</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5EDA9633-15EB-935B-9B5B-7371D6E5C1BC" referredColumn="4DB4B732-7D7E-F3F7-350E-9268BAD46FC4"/>
+</associations>
+</Column>
+<Column name="COUNTRY_ID" id="D9C51A10-93C6-5F2A-36BD-449D11314759">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>67192457-11FC-8A56-7500-4EB049808C22</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B9D2AFA4-D9A2-F1F9-C55F-9E528A7F89C5" referredColumn="73249E8B-35DE-70BE-5E29-87DA2337D180"/>
+</associations>
+</Column>
+<Column name="MARKET_ID" id="E8615D6A-AE5D-9A68-0A56-7927519605BD">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>1B5194F2-1883-5BFB-375C-CAE003DC1BFF</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95FF7560-4617-B6FE-FC10-415F7E0A7095" referredColumn="832E22F8-1725-EED4-12F3-EF10410FB6D2"/>
+</associations>
+</Column>
+<Column name="REGION_ID" id="9CAB4DA1-F51C-475C-49B4-5C1B569C4E8F">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>FF0B4D26-A318-EC7B-C8D6-06F95BCAA8F0</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B0F6DCD-A090-885C-67F2-DDD99C89EB0A" referredColumn="2A3470A8-1CE7-422E-2DB1-CB8D6F5A9122"/>
+</associations>
+</Column>
+<Column name="CATEGORY_ID" id="C7EA9522-2919-3E97-5432-3BF89D6A7EB4">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>C992EC56-EC2F-8CDF-4697-0D6236663B52</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A71A03CC-7D91-CEEA-BE81-C7F14C328D06" referredColumn="A7BABA6C-6F7B-7EB3-7293-36D1F03D94D8"/>
+</associations>
+</Column>
+<Column name="SUB_CAT_ID" id="31F7C21F-C945-3184-C48F-8FB58031CF59">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>1CD26FA1-4EB1-386A-FA11-188ECC0651C1</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E7AA0195-02F1-ADAC-90F0-B1309813BFA8" referredColumn="7D587087-6D8D-6721-83E3-0CA248C21FA5"/>
+</associations>
+</Column>
+<Column name="DATE_ID" id="5A09A0EF-D28C-D643-E655-63D24B4CD7DC">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>493FB7FB-8026-8B68-12A6-4CEF49AC4A69</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B085A3EC-C781-8873-FD66-EBA617DD8B55" referredColumn="7B24FF69-7DB4-6738-E9F1-54D5CD960C58"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D3058B4-FA7D-E1FB-BC40-ADAF1253A148" name="FACT_VP_ORDER_PRODUCT_PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>887B4FB0-095A-C1D0-7659-21501E285F73</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E7FDECF-D97D-D27D-30C9-A431A1B736E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDB05304-1920-981F-AB13-AA3726D5F2A8" name="FACT_VP_OP_DIM_DATE_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>730107F9-60EC-13F7-2CBC-E481B3516735</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A09A0EF-D28C-D643-E655-63D24B4CD7DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F385B0C-5DA2-2321-4D84-0B83797165EF" name="FACT_VP_OP_DIM_CATEGORY_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>FCAD18E2-3A2D-8D0F-EE83-F8ABBE60F441</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7EA9522-2919-3E97-5432-3BF89D6A7EB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65730B5E-E845-09B9-AB91-C77D9ABC5A73" name="FACT_VP_OP_DIM_COUNTRY_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>420987E1-F946-157F-DDB0-B36797483D90</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9C51A10-93C6-5F2A-36BD-449D11314759"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40CE47D0-ED33-74C7-66A4-1D6C217B35CA" name="FACT_VP_OP_DIM_CUSTOMER_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>37A22B53-4A45-6A32-DD59-7A5A786E7EA8</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB88C5F8-403D-1C9B-601C-65331181FC97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2571D21A-A33D-F92F-A918-B8A37B68B153" name="FACT_VP_OP_DIM_LOCATION_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>298BD13A-EDA4-D815-2197-126EA64B8102</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABBD4459-D414-B472-D171-4AB3F7138AD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="934759D2-EE3F-7329-5E11-D069AD18AFCE" name="FACT_VP_OP_DIM_MARKET_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>F60840EF-2069-77BA-E6DA-55294D4462E8</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E8615D6A-AE5D-9A68-0A56-7927519605BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EFBDA56-C47C-C096-B9C6-90590F9CFF07" name="FACT_VP_OP_DIM_ORDERS_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>8E3C2239-5817-3E33-3183-7AE4FC72D192</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="777D9C77-D351-36D5-4837-F42809EE56E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="835B6C68-0226-3BA9-1C78-BA46897D19C7" name="FACT_VP_OP_DIM_PRODUCT_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>26DB57D2-4FFB-BACD-1FA3-7C624FF87448</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E69849F-5B11-A0DE-4EB7-4451843893E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="16FCF36F-778D-15F0-310E-CDFE350C4799" name="FACT_VP_OP_DIM_REGION_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>861A1BED-CCE0-BD93-3AD6-A601BA805E97</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CAB4DA1-F51C-475C-49B4-5C1B569C4E8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B71C8FB-BFBC-1A91-63F1-F3D826FA05F2" name="FACT_VP_OP_DIM_STATE_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>D7C614F9-7D0C-6429-D185-F8B4BE1A8BD7</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="410D1D74-4742-D055-4B7E-003ECB709E03"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D19F33B-D9FE-9C57-B039-961EACCE8D58" name="FACT_VP_OP_DIM_SUB_CATEGORY_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>0CD92CAF-5CFA-BB2C-7B96-5B0DF1DC7E03</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31F7C21F-C945-3184-C48F-8FB58031CF59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

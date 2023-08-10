@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VP_ORDER_PRODUCT1" directorySegmentName="seg_0" id="8E3C2239-5817-3E33-3183-7AE4FC72D192">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:33:43 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<sourcePk>765F2AE9-19B8-86EF-0148-BD79E6D3F234</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>46FD04E9-691D-0D81-9FC5-9F960F0B0D32</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0EB5E0AE-2F12-4F64-447B-112B3A582EDD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

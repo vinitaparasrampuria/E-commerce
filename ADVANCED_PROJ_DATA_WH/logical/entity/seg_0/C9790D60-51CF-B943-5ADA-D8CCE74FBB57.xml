@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C9790D60-51CF-B943-5ADA-D8CCE74FBB57" name="DIM_VP_LOCATION">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 05:23:56 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="LOCATION_ID" id="4E696DAB-46C7-6269-4C87-3B4E56823489">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 05:24:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[UNIQUE LACTION ID]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TABL_LAST_UPDATE" id="F1BD693A-1F0A-DAF5-C7DC-84FB568F5960">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 08:08:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF TABLE]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D763859D-3D92-552B-BA3C-A300DC933BA7" name="VP_LOCATION PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 05:24:45 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4E696DAB-46C7-6269-4C87-3B4E56823489</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

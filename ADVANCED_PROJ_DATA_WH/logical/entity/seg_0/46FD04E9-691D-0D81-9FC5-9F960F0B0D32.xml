@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="46FD04E9-691D-0D81-9FC5-9F960F0B0D32" name="DIM_VP_ORDERS">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 02:45:15 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ORDER_ID" id="95CA5290-1FAE-D154-C18A-FFF5991232EB">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:02:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[UNIQUE ORDER_ID]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_DATE" id="CCC118CA-E9F1-18D6-41E2-330A6B4C798A">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:02:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[DATE OF ORDER]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ORDER_PRIORITY" id="E8FE86AA-191C-9A2F-EBCB-562881869B87">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:03:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[PRIORITY OF THE ORDER]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RETURNED" id="796AB091-07D5-23B5-04E9-FBEF08E5892D">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:05:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[WHETHER THE ORDER WAS RETURNED]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TABL_LAST_DATE" id="47A0289D-EB01-D60E-6249-9EECD34BA687">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 00:09:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF THE TABLE]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="765F2AE9-19B8-86EF-0148-BD79E6D3F234" name="VP_ORDERS PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:02:37 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>95CA5290-1FAE-D154-C18A-FFF5991232EB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

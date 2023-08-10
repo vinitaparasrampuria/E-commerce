@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VP_MARKET_REGION" directorySegmentName="seg_0" id="EB02715F-0FA7-3AF4-BF0E-D1E7D8C0D4FC">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:32:34 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<sourcePk>03A65EA0-DFDE-132C-4DFB-875E1A6B6EFE</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5150030D-FB51-DDB0-97A8-5CA88191181A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0E939F38-1BC3-94BF-10C1-1AC42C6724CB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

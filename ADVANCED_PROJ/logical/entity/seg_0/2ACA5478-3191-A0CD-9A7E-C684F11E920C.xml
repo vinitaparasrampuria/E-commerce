@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2ACA5478-3191-A0CD-9A7E-C684F11E920C" name="VP_SUB_CATEGORY">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:14:02 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SUB_CAT_ID" id="D1FD88E6-67DB-0CF3-9017-4B1A2B6BA897">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:14:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[UNIQUE SUB CATEGORY ID]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SUB_CAT_NAME" id="77A22666-DE15-A195-9530-13CCD8607F93">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:14:35 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE SUB CATEGORY]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CATEGORY_ID" id="35616542-E4A7-1F11-93EA-3EFD1D10DC48">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:38:28 UTC</createdTime>
+<generatorID>D3C365AB-41CE-5237-8213-08CC199103FC</generatorID>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<referedAttribute>C8B7B072-4670-02FA-9A4D-8A4A31724439</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TABL_LAST_DATE" id="10D82D78-68FD-B535-9DE3-F0CEBDE63B09">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 00:10:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF THE TABLE
+]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AFC1F9E3-D4DD-0429-ECD8-849F15805231" name="VP_SUB_CATEGORY PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:14:27 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D1FD88E6-67DB-0CF3-9017-4B1A2B6BA897</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

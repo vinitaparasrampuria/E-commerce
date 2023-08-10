@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="95FF7560-4617-B6FE-FC10-415F7E0A7095" containerWithKeyObject="8C0250FA-11E5-DF3B-C140-1BC6C0B39109" localFKIndex="934759D2-EE3F-7329-5E11-D069AD18AFCE" name="FACT_VP_OP_DIM_MARKET_FK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-31 00:44:42 UTC</createdTime>
+<generatorID>F60840EF-2069-77BA-E6DA-55294D4462E8</generatorID>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<referredTableLongName>DIM_VP_MARKET</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>725E6828-3222-895E-18D5-B8CA5048B7F1</referredTableID>
+<keyObject>DE8A8E24-68FF-A1AA-17EA-0C63BB4D4074</keyObject>
+<referredKeyID>DE8A8E24-68FF-A1AA-17EA-0C63BB4D4074</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MARKET_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

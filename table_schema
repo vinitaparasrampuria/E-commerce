@@ -1,0 +1,389 @@
+-- SQLINES DEMO *** le SQL Developer Data Modeler 22.2.0.165.1149
+-- SQLINES DEMO *** -03-21 22:09:47 EDT
+-- SQLINES DEMO *** le Database 11g
+-- SQLINES DEMO *** le Database 11g
+
+
+
+-- SQLINES DEMO *** no DDL - MDSYS.SDO_GEOMETRY
+
+-- SQLINES DEMO *** no DDL - XMLTYPE
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_category (
+    category_id    BIGINT NOT NULL COMMENT 'UNIQUE CATEGORY ID',
+    category_name  VARCHAR(50) NOT NULL COMMENT 'NAME OF THE CATEGORY',
+    tabl_last_date DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF THE TABLE'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_category.category_id IS
+    'UNIQUE CATEGORY ID'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_category.category_name IS
+    'NAME OF THE CATEGORY'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_category.tabl_last_date IS
+    'LAST UPDATE DATE OF THE TABLE'; */
+
+ALTER TABLE vp_category ADD CONSTRAINT vp_category_pk PRIMARY KEY ( category_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_country (
+    country_id     BIGINT NOT NULL COMMENT 'UNIQUE COUNTRY ID',
+    country_name   VARCHAR(30) NOT NULL COMMENT 'NAME OF THE COUNTRY',
+    region_id      BIGINT NOT NULL,
+    tabl_last_date DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF THE TABLE'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_country.country_id IS
+    'UNIQUE COUNTRY ID'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_country.country_name IS
+    'NAME OF THE COUNTRY'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_country.tabl_last_date IS
+    'LAST UPDATE DATE OF THE TABLE'; */
+
+ALTER TABLE vp_country ADD CONSTRAINT vp_country_pk PRIMARY KEY ( country_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_customer (
+    cust_id        VARCHAR(15) NOT NULL COMMENT 'UNIQUE CUSTOMER ID',
+    cust_fname     VARCHAR(30) NOT NULL COMMENT 'FIRST NAME OF THE CUSTOMER',
+    cust_lname     VARCHAR(40) NOT NULL COMMENT 'LAST NAME OF THE CUSTOMER',
+    segment        VARCHAR(15) NOT NULL COMMENT 'SEGMENT OF THE CUSTOMER- CONSUMER/ CORPORATE/ HOME OFFICE',
+    postal_id      VARCHAR(12) COMMENT 'POSTAL CODE OF CUSTOMER ADDRESS',
+    city_name      VARCHAR(50) NOT NULL COMMENT 'NAME OF THE CITY',
+    tabl_last_date DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF THE TABLE',
+    location_id    BIGINT NOT NULL
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_customer.cust_id IS
+    'UNIQUE CUSTOMER ID'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_customer.cust_fname IS
+    'FIRST NAME OF THE CUSTOMER'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_customer.cust_lname IS
+    'LAST NAME OF THE CUSTOMER'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_customer.segment IS
+    'SEGMENT OF THE CUSTOMER- CONSUMER/ CORPORATE/ HOME OFFICE'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_customer.postal_id IS
+    'POSTAL CODE OF CUSTOMER ADDRESS'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_customer.city_name IS
+    'NAME OF THE CITY'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_customer.tabl_last_date IS
+    'LAST UPDATE DATE OF THE TABLE'; */
+
+ALTER TABLE vp_customer ADD CONSTRAINT vp_customer_pk PRIMARY KEY ( cust_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_location (
+    location_id      BIGINT NOT NULL COMMENT 'UNIQUE LACTION ID',
+    state_id         BIGINT NOT NULL,
+    tabl_last_update DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF TABLE'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_location.location_id IS
+    'UNIQUE LACTION ID'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_location.tabl_last_update IS
+    'LAST UPDATE DATE OF TABLE'; */
+
+ALTER TABLE vp_location ADD CONSTRAINT vp_location_pk PRIMARY KEY ( location_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_market (
+    market_id      BIGINT NOT NULL COMMENT 'UNIQUR MARKET ID',
+    market_name    VARCHAR(50) NOT NULL COMMENT 'NAME OF THE MARKET',
+    tabl_last_date DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF THE TABLE'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_market.market_id IS
+    'UNIQUR MARKET ID'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_market.market_name IS
+    'NAME OF THE MARKET'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_market.tabl_last_date IS
+    'LAST UPDATE DATE OF THE TABLE'; */
+
+ALTER TABLE vp_market ADD CONSTRAINT vp_market_pk PRIMARY KEY ( market_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_order_product (
+    row_id         BIGINT NOT NULL,
+    quantity       INT NOT NULL COMMENT 'QUANTITY OF PRODUCT',
+    discount       DECIMAL(10, 2) NOT NULL COMMENT 'DISCOUNT FOR EACH PRODUCT',
+    shipping_cost  DECIMAL(10, 2) NOT NULL COMMENT 'SHIPPING COST OF PRODUCT',
+    order_id       VARCHAR(50) NOT NULL,
+    product_id     VARCHAR(40) NOT NULL,
+    tabl_last_date DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF THE TABLE',
+    ship_mode      VARCHAR(20) NOT NULL COMMENT 'MODE OF SHIPMENT',
+    ship_date      DATETIME NOT NULL COMMENT 'DATE OF SHIPMENT'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_order_product.quantity IS
+    'QUANTITY OF PRODUCT'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_order_product.discount IS
+    'DISCOUNT FOR EACH PRODUCT'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_order_product.shipping_cost IS
+    'SHIPPING COST OF PRODUCT'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_order_product.tabl_last_date IS
+    'LAST UPDATE DATE OF THE TABLE'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_order_product.ship_mode IS
+    'MODE OF SHIPMENT'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_order_product.ship_date IS
+    'DATE OF SHIPMENT'; */
+
+ALTER TABLE vp_order_product ADD CONSTRAINT vp_order_product_pk PRIMARY KEY ( row_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_orders (
+    order_id       VARCHAR(50) NOT NULL COMMENT 'UNIQUE ORDER_ID',
+    order_date     DATETIME NOT NULL COMMENT 'DATE OF ORDER',
+    order_priority VARCHAR(20) NOT NULL COMMENT 'PRIORITY OF THE ORDER',
+    returned       VARCHAR(5) NOT NULL COMMENT 'WHETHER THE ORDER WAS RETURNED',
+    cust_id        VARCHAR(15) NOT NULL,
+    tabl_last_date DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF THE TABLE'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_orders.order_id IS
+    'UNIQUE ORDER_ID'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_orders.order_date IS
+    'DATE OF ORDER'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_orders.order_priority IS
+    'PRIORITY OF THE ORDER'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_orders.returned IS
+    'WHETHER THE ORDER WAS RETURNED'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_orders.tabl_last_date IS
+    'LAST UPDATE DATE OF THE TABLE'; */
+
+ALTER TABLE vp_orders ADD CONSTRAINT vp_orders_pk PRIMARY KEY ( order_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_product (
+    product_id       VARCHAR(40) NOT NULL COMMENT 'UNIQUE PRODUCT ID',
+    product_name     VARCHAR(150) NOT NULL COMMENT 'NAME OF THE PRODUCT',
+    manufacture_cost DECIMAL(10, 2) NOT NULL COMMENT 'MANUFACTURING COST OF THE PRODUCT',
+    retail_price     DECIMAL(10, 2) NOT NULL COMMENT 'RETAIL PRICE OF THE PRODUCT',
+    sub_cat_id       BIGINT NOT NULL,
+    tabl_last_date   DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF THE TABLE'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_product.product_id IS
+    'UNIQUE PRODUCT ID'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_product.product_name IS
+    'NAME OF THE PRODUCT'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_product.manufacture_cost IS
+    'MANUFACTURING COST OF THE PRODUCT'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_product.retail_price IS
+    'RETAIL PRICE OF THE PRODUCT'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_product.tabl_last_date IS
+    'LAST UPDATE DATE OF THE TABLE'; */
+
+ALTER TABLE vp_product ADD CONSTRAINT vp_product_pk PRIMARY KEY ( product_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_region (
+    region_id      BIGINT NOT NULL COMMENT 'UNIQUE ID OF THE REGION',
+    region_name    VARCHAR(50) NOT NULL COMMENT 'NAME OF THE REGION',
+    market_id      BIGINT NOT NULL,
+    tabl_last_date DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF THE TABLE'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_region.region_id IS
+    'UNIQUE ID OF THE REGION'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_region.region_name IS
+    'NAME OF THE REGION'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_region.tabl_last_date IS
+    'LAST UPDATE DATE OF THE TABLE'; */
+
+ALTER TABLE vp_region ADD CONSTRAINT vp_region_pk PRIMARY KEY ( region_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_state (
+    state_id       BIGINT NOT NULL COMMENT 'UNIQUE ID OF THE STATE',
+    state_name     VARCHAR(30) NOT NULL COMMENT 'NAME OF THE STATE',
+    country_id     BIGINT NOT NULL,
+    tabl_last_date DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF THE TABLE'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_state.state_id IS
+    'UNIQUE ID OF THE STATE'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_state.state_name IS
+    'NAME OF THE STATE'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_state.tabl_last_date IS
+    'LAST UPDATE DATE OF THE TABLE'; */
+
+ALTER TABLE vp_state ADD CONSTRAINT vp_state_pk PRIMARY KEY ( state_id );
+
+-- SQLINES LICENSE FOR EVALUATION USE ONLY
+CREATE TABLE vp_sub_category (
+    sub_cat_id     BIGINT NOT NULL COMMENT 'UNIQUE SUB CATEGORY ID',
+    sub_cat_name   VARCHAR(100) NOT NULL COMMENT 'NAME OF THE SUB CATEGORY',
+    category_id    BIGINT NOT NULL,
+    tabl_last_date DATETIME NOT NULL COMMENT 'LAST UPDATE DATE OF THE TABLE
+'
+);
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_sub_category.sub_cat_id IS
+    'UNIQUE SUB CATEGORY ID'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_sub_category.sub_cat_name IS
+    'NAME OF THE SUB CATEGORY'; */
+
+/* Moved to CREATE TABLE
+COMMENT ON COLUMN vp_sub_category.tabl_last_date IS
+    'LAST UPDATE DATE OF THE TABLE
+'; */
+
+ALTER TABLE vp_sub_category ADD CONSTRAINT vp_sub_category_pk PRIMARY KEY ( sub_cat_id );
+
+ALTER TABLE vp_country
+    ADD CONSTRAINT vp_country_vp_region_fk FOREIGN KEY ( region_id )
+        REFERENCES vp_region ( region_id );
+
+ALTER TABLE vp_customer
+    ADD CONSTRAINT vp_customer_vp_location_fk FOREIGN KEY ( location_id )
+        REFERENCES vp_location ( location_id );
+
+ALTER TABLE vp_location
+    ADD CONSTRAINT vp_location_vp_state_fk FOREIGN KEY ( state_id )
+        REFERENCES vp_state ( state_id );
+
+ALTER TABLE vp_order_product
+    ADD CONSTRAINT vp_order_product_vp_orders_fk FOREIGN KEY ( order_id )
+        REFERENCES vp_orders ( order_id );
+
+ALTER TABLE vp_order_product
+    ADD CONSTRAINT vp_order_product_vp_product_fk FOREIGN KEY ( product_id )
+        REFERENCES vp_product ( product_id );
+
+ALTER TABLE vp_orders
+    ADD CONSTRAINT vp_orders_vp_customer_fk FOREIGN KEY ( cust_id )
+        REFERENCES vp_customer ( cust_id );
+
+ALTER TABLE vp_product
+    ADD CONSTRAINT vp_product_vp_sub_category_fk FOREIGN KEY ( sub_cat_id )
+        REFERENCES vp_sub_category ( sub_cat_id );
+
+ALTER TABLE vp_region
+    ADD CONSTRAINT vp_region_vp_market_fk FOREIGN KEY ( market_id )
+        REFERENCES vp_market ( market_id );
+
+ALTER TABLE vp_state
+    ADD CONSTRAINT vp_state_vp_country_fk FOREIGN KEY ( country_id )
+        REFERENCES vp_country ( country_id );
+
+ALTER TABLE vp_sub_category
+    ADD CONSTRAINT vp_sub_category_vp_category_fk FOREIGN KEY ( category_id )
+        REFERENCES vp_category ( category_id );
+
+
+
+-- SQLINES DEMO *** per Data Modeler Summary Report: 
+-- 
+-- SQLINES DEMO ***                        11
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                        21
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO *** DY                      0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***  TYPE                   0
+-- SQLINES DEMO ***  TYPE                   0
+-- SQLINES DEMO ***  TYPE BODY              0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO *** EGMENT                  0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO *** ED VIEW                 0
+-- SQLINES DEMO *** ED VIEW LOG             0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- 
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0
+-- 
+-- SQLINES DEMO ***                         0
+-- 
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO *** A                       0
+-- SQLINES DEMO *** T                       0
+-- 
+-- SQLINES DEMO ***                         0
+-- SQLINES DEMO ***                         0

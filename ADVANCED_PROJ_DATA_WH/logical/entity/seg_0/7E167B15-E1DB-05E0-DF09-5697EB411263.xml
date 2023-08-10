@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7E167B15-E1DB-05E0-DF09-5697EB411263" name="DIM_VP_PRODUCT">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:09:29 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PRODUCT_ID" id="55FE0E64-0559-2EA0-3BD0-C1832C027229">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:09:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[UNIQUE PRODUCT ID]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCT_NAME" id="1C424C76-1D08-EC2B-4BDF-F49D4FB7010E">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:10:00 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAME OF THE PRODUCT]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MANUFACTURE_COST" id="522EE887-0D3E-E646-4F07-714D451EB2FB">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:10:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[MANUFACTURING COST OF THE PRODUCT]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RETAIL_PRICE" id="9F86B936-CA1C-1260-AC4D-A401AB9DA27E">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:11:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[RETAIL PRICE OF THE PRODUCT]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TABL_LAST_DATE" id="25A39186-10F1-D77D-F354-507F1D06EEBC">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-18 00:10:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[LAST UPDATE DATE OF THE TABLE]]></commentInRDBMS>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="71021A8F-BCFE-3E89-88D0-88D71568C141" name="VP_PRODUCT PK">
+<createdBy>vinitaparasrampuria</createdBy>
+<createdTime>2023-03-14 03:09:52 UTC</createdTime>
+<ownerDesignName>ADVANCED_PROJ_DATA_WH</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="B9AA1332-C4DE-7E8D-A36C-AEA7D0AF6350" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>55FE0E64-0559-2EA0-3BD0-C1832C027229</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
